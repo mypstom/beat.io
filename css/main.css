@@ -1,19 +1,46 @@
-.container{
+
+.container {
+	width: 700px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main {
+	position: relative;
 	margin-top: 5px;
-	background-color: black;
+	background-color: #222222;
 	height: 600px;
 	width: 600px;
-	display: flex;
-	justify-content: center;
-    align-items: center;
+    padding: 2px;
 }
+
+/*=========================================
+ System Bar
+ =========================================*/
+.system-field {
+	margin-top: 5px;
+	height: 600px;
+	width: 100px;
+}
+
+.system-field button {
+	width: 80px !important;
+	height: 80px;
+}
+
+
+
 /*=========================================
  Game View 
  =========================================*/
 .game {
-	display: none;
-	width: 100%;
-	height: 100%;
+	width: 600px;
+	height: 600px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	   background-color: black;
 
 }
 .game-view {
@@ -27,13 +54,35 @@
 .my-card {
 	width: 100%;
 	height: 90px;
-	background-color: blue;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90px;
+	padding: 0px;
+}
+
+.card {
+	width: 85%;
+	height: 85%;
+	background-color: aquamarine;
+}
+
+.card:hover {
+	margin-bottom: 80px;
+	width: 100%;
+	height: 100%;
 }
 
 .progress {
 	margin: 3px !important;
 }
 
+.row {
+	margin: 0px !important;
+}
 
 /*=========================================
  Battle View 
@@ -41,8 +90,22 @@
 .battle-view {
 	width: 100%;
 	height: 450px;
-	background-color: yellow;
+	background-color: black;
+	position: relative;
+}
 
+.friend-name {
+	position: absolute;
+	color: white;
+	top: 0px;
+	left: 0px;
+}
+
+.my-name {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	color: white;
 }
 
 
@@ -50,19 +113,65 @@
  Login 
  =========================================*/
 .name {
+	font-size: 30px;
 	color: white;
 	border-left: 0;
     border-right: 0;
     border-top: 0;
     border-color: coral;
-	background-color: black;
+	background-color: rgba(0,0,0,0.8);;
 }
 
 .login {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: 600px;
+	height: 600px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.8);
 
 }
 
 .login-botton {
-
-
+	font-size: 50px;
 }
+
+/*=========================================
+ Attack and def view
+ =========================================*/
+.attack-view {
+	color: white;
+	display: none;
+	position: absolute;
+	//justify-content: center;
+    //align-items: center;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 4;
+}
+
+.def-view {
+	color: white;
+	display: none;
+	position: absolute;
+	//justify-content: center;
+    //align-items: center;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 4;
+}
+
+
+
+
+
+
+
+
+
