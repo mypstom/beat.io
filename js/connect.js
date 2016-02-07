@@ -16,8 +16,13 @@ class Connect{
 				this.socket.on(event, callback);
 		}
 		emit(...args){
-			console.log(...args);
 			this.socket.emit(...args);
+		}
+		connect(){
+				this.socket.connect();
+		}
+		disconnect(){
+				this.socket.disconnect();
 		}
 }
 
