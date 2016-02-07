@@ -1,0 +1,25 @@
+{
+  "name": "beat.io",
+  "version": "0.0.1",
+  "description": "beat.io",
+  "main": "beat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mypstom/beat.io.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Xiantank",
+  "bugs": {
+    "url": "https://github.com/mypstom/beat.io/issues"
+  },
+  "homepage": "https://github.com/mypstom/beat.io#readme",
+  "dependencies": {
+    "log": "^1.4.0",
+    "socket.io": "^1.4.5"
+  }
+}
