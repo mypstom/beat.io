@@ -2,10 +2,14 @@
 <html>
   <head>
     <title>Beat.io</title>
+    <script src="https://cdn.socket.io/socket.io-1.4.4.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/connect.js"></script>
     <script src="js/script.js"></script>
+
+
 
   </head>
   <body>
@@ -26,6 +30,16 @@
         </div>
         <div class="def-view">
           <p>防守回合!!</p>
+        </div>
+        <div class="waiting-player">
+          <div class="loading-spinner">
+            <div class="sk-folding-cube">
+              <div class="sk-cube1 sk-cube"></div>
+              <div class="sk-cube2 sk-cube"></div>
+              <div class="sk-cube4 sk-cube"></div>
+              <div class="sk-cube3 sk-cube"></div>
+            </div>
+          </div>
         </div>
 
         <div class="game">

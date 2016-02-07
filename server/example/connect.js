@@ -11,6 +11,9 @@ class Connect{
 		on(event, callback){
 				this.socket.on(event, callback);
 		}
+		emit(...args){
+			this.socket.emit(...args);
+		}
 		set name(userName){
 				this._userName = userName;
 				this.socket.emit("createRoom", {name: this._userName});
